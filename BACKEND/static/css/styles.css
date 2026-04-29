@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+   height: 100vh;
+   background: linear-gradient(45deg, #000000, #1a1a1a, #333333, #4d4d4d, #666666, #808080, #999999, #b3b3b3, #cccccc, #e6e6e6, #ffffff);
+   background-size: 400% 400%;
+   animation: gradient 12s ease-in infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+    
+}
+
+
+.container{
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+}
+
+.login{
+    position: relative;
+    text-align: center;
+    margin-top: 24px;
+    font-size: .8rem;
+    font-family: sans-serif;
+    top: 20%;
+    color: #fff;
+
+    a{
+        color: blue;
+    }
+}
+
+
+.form-background {
+
+    background: #fff;
+    width: 420px;
+    border-radius: 10px;
+    padding: 32px;
+}
+
+form{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px;
+    padding: 15px 20px;
+    color: #8498AF;
+    font-size: .9rem;
+    transition: .8s;
+}
+
+[type="submit"]{
+    background-color: black;
+    border-radius: 30px;
+    padding: 16px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .8rem;
+    transition: 4s;
+    border: none;
+    margin: 0;
+
+    &:hover{
+        background-color: black;
+        cursor: pointer;
+    }
+}

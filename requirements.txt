@@ -1,0 +1,7 @@
+# para instalar requirements ejecuta el siguiente comando en la terminal 
+# pip install -r requirements.txt
+# recuerda tener un entorno virtual en tu pc para que los archivos
+# no interfieran con tu sistema(recuerda tener instalado python).
+flask
+pymysql
+cryptography

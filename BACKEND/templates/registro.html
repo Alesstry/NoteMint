@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registroStyles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="register-form">
+            <h1> Registro </h1>
+            <form action="{{url_for('register')}} " method="post" autocomplete="off">
+                <input type="text" name="usuario" placeholder="Nombre" id="usuario" required>
+                <input type="text" name="lastname" placeholder="Apellido(opcional)" id="apellido">
+                <br>
+                <input type="text" name="email" placeholder="Email" id="email" required>
+                <br>
+                <br></br>
+                <input type="submit" value="Registrarse">
+                <div class="msg"> {{msg}}</div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
